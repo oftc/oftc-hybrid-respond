@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Christoph Berg <christoph.berg@credativ.de>
 Build-Depends: debhelper (>= 10),
  autotools-dev,
- libssl-dev,
+ libssl-dev | libssl1.0-dev,
 Standards-Version: 4.1.3
 Homepage: https://github.com/oftc/oftc-hybrid-respond
 Vcs-Git: https://github.com/oftc/oftc-hybrid-respond.git
