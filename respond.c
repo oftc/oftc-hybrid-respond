@@ -138,7 +138,7 @@ main(int argc, char **argv)
 		return 0;
 	}
 	
-	SSLeay_add_all_ciphers();
+	OpenSSL_add_all_ciphers();
 	rsa = PEM_read_RSAPrivateKey(kfile, NULL,pass_cb, NULL);
   
 	if(!rsa)
