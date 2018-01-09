@@ -20,7 +20,7 @@ respond: respond.c
 	$(CC) $(CFLAGS) -o respond respond.c ${INCLUDES} ${LDFLAGS} ${LIBS}
 
 install: respond
-	mkdir -p $(bindir)
+	mkdir -p $(bindir) $(mandir)/man1
 	$(INSTALL_PROGRAM) respond $(bindir)
 	$(INSTALL_DATA) respond.1 $(mandir)/man1
 
